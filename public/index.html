@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets - Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">🎬 MovieTickets</a>
+            <div class="nav-links">
+                <a href="/" class="active">Home</a>
+                <a href="/movies.html">Movies</a>
+                <a href="#" id="myBookingsLink">My Bookings</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Book Your Movie Tickets</h1>
+            <p>Experience cinema like never before</p>
+            <a href="/movies.html" class="cta-button">Book Now</a>
+        </section>
+
+        <section class="featured-movies">
+            <h2>Featured Movies</h2>
+            <div class="movies-grid" id="featuredMovies">
+                <!-- Movies will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for My Bookings -->
+    <div id="bookingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>My Bookings</h2>
+            <div id="bookingsList"></div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

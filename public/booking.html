@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Select Seats</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">🎬 MovieTickets</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/movies.html">Movies</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="booking-container">
+            <div class="movie-info-card" id="movieInfo">
+                <h2 id="movieTitle"></h2>
+                <p id="movieDetails"></p>
+            </div>
+
+            <div class="screen-container">
+                <div class="screen">SCREEN</div>
+            </div>
+
+            <div class="seats-container" id="seatsContainer">
+                <!-- Seats will be generated here -->
+            </div>
+
+            <div class="booking-summary">
+                <div class="selected-info">
+                    <span>Selected Seats: </span>
+                    <span id="selectedSeats">None</span>
+                </div>
+                <div class="total-price">
+                    <span>Total: ₹</span>
+                    <span id="totalPrice">0</span>
+                </div>
+                <button id="proceedToPayment" class="payment-btn">Proceed to Payment</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/booking.js"></script>
+</body>
+</html>
